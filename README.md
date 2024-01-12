@@ -31,4 +31,4 @@ Keyframer is a keyframe editor component for use with animationCOMP in TD. It's 
 
 ## Installation
 
-To use Keyframer, download only the `.tox` file.
+To use Keyframer, only the `Keyframer.*.tox` file is required (external modules and files do not need to be downloaded).
