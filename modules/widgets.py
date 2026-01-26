@@ -152,7 +152,8 @@ class Element:
 		if hasattr(ownerComp.par, 'Doundo'):
 			self.doUndo = ownerComp.par.Doundo.eval()	
 		else:
-			for i in range(vsu.getOpDepth(ownerComp)):
+			for i in range(1, vsu.getOpDepth(ownerComp)):
+				print(i, ownerComp.parent(i))
 				if hasattr(ownerComp.parent(i).par, 'Doundo'):
 					self.doUndo = ownerComp.parent(i).par.Doundo.eval()
 					break

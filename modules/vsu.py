@@ -24,6 +24,7 @@ def getOpDepth(operator, maxSearchDepth=100):
 		if operator.parent(i) == root:
 			isRoot = True
 			depth = i
+			break
 		i += 1
 	return(depth)
 
